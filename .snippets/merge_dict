@@ -1,0 +1,6 @@
+4jo
+def merge_dicts(*dicts: dict):
+    merged_dict = dict()
+    for d in dicts:
+        merge_dict.update(d)
+    return merged_dict
