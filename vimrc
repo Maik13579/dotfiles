@@ -101,7 +101,7 @@ nnoremap <PageDown> <Nop>
 "
 "inserts a snippet. Takes current line as name of snippet_file
 "execute first line from snippet as a recording
-inoremap <Leader>ss <Esc>0v$F(h"sd:Snippet <C-r>s<CR>0v$h"sd"_dd@s
+inoremap <Leader>ss <Esc>0v$F:h"sd"_x:Snippet <C-r>s<CR>0v$h"sd"_dd@s
 command! -nargs=1 Snippet :read ~/.vim/.snippets/<args>
 
 "create a Snippet
@@ -109,6 +109,7 @@ vnoremap <Leader>cs :w! ~/.vim/.snippets/
 
 "get snippet without executefirst line
 nnoremap <Leader>s :Snippet 
+
 
 "<F9> to start python script
 :map <F9> :!python %<CR>
