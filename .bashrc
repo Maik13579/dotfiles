@@ -117,3 +117,11 @@ if ! shopt -oq posix; then
   fi
 fi
 # }}}
+
+# DOTFILES-----------------------------------------------------------{{{
+#get path to dotfiles
+export DOTFILES=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+#source other dotfiles
+source ${DOTFILES}/docker/.bashrc
+# }}}
