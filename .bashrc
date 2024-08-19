@@ -124,4 +124,6 @@ export DOTFILES=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && p
 
 #source other dotfiles
 source ${DOTFILES}/docker/.bashrc
+source ${DOTFILES}/ros/ros1.bash
+source ${DOTFILES}/ros/ros2.bash
 # }}}
