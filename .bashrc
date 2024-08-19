@@ -127,3 +127,20 @@ source ${DOTFILES}/docker/.bashrc
 source ${DOTFILES}/ros/ros1.bash
 source ${DOTFILES}/ros/ros2.bash
 # }}}
+
+# UTILS--------------------------------------------------------------{{{
+reset_audio(){
+	pulseaudio -k && sudo alsa force-reload
+}
+# }}}
+
+# WORK---------------------------------------------------------------{{{
+export WORKSPACES=${HOME}/workspaces/knofm_workspaces
+alias workspaces='cd ${WORKSPACES}'
+alias workspace_robocup_2024='source ${WORKSPACES}/knofm_robocup_2024/setup.bash'
+alias workspace_ros2='source ${WORKSPACES}/knofm_ros2/setup.bash'
+# }}}
+
+
+gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/On_top_of_the_Rubihorn_by_Matthias_Niess.jpg'
+clear
